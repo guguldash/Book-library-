@@ -1,0 +1,34 @@
+[
+    {
+        "_id": "1",
+        "member_name": "Shashidhar",
+        "member_email": "shashidhark@gmail.com",
+        "member_phone_number": "9845249058",
+        "membership_date": "2024-10-28",
+        "member_password": "111"
+    },
+    {
+        "_id": "2",
+        "member_name": "Sneha",
+        "member_email": "snehas@gmail.com",
+        "member_phone_number": "6360608312",
+        "membership_date": "2024-10-12",
+        "member_password": "222"
+    },
+    {
+        "_id": "3",
+        "member_name": "Savitri",
+        "member_email": "savitrikour@gmail.com",
+        "member_phone_number": "7975665151",
+        "membership_date": "2024-10-01",
+        "member_password": "333"
+    },
+    {
+        "_id": "4",
+        "member_name": "Swapna",
+        "member_email": "swapnakour@gmail.com",
+        "member_phone_number": "9620535275",
+        "membership_date": "2024-10-10",
+        "member_password": "444"
+    }
+]

@@ -1,0 +1,66 @@
+<div id='x-main' class="container-full mt-5 p-3">
+<div class="container-md">
+<div class="row">
+<div class="col-12 p-2">
+	<h3 class="float-start">Add Book</h3>
+	<button type="button" class="btn btn-outline-primary float-end mx-2" onclick="show_book_list();">Cancel</button>
+	<button type="button" class="btn btn-outline-primary float-end mx-2" onclick="save_book();">Save</button>	
+	</div>
+	</div>
+	<form method="post" id="book_form">
+
+	<div class="row">
+	<div class="col-4">
+	  <label for="booktitle" class="form-label">Title</label>
+	  <input type="hidden" class="form-control" id="bookid" name="_id">     		
+	  <input type="text" class="form-control" id="booktitle" name="book_title">     		
+    </div>
+	
+	<div class="col-4">
+		<label for="publishdate" class="form-label">Publish Date</label>
+		<input type="Date" class="form-control" id="publishdate" name="publish_date" required>     		
+	</div>
+	
+	<div class="col-4">
+		<label for="bookprice" class="form-label">Price</label>
+		<input type="number" class="form-control" id="bookprice" name="price" required>     		
+	</div>
+	
+	<div class="col-6">
+	    <input type="hidden" id="txtcategory" class="form-control" name="category_id">
+        <input type="hidden" class="form-control" id="txtcategoryname" name="category"> 
+
+		<label for="selcategory" class="form-label">Category</label>
+		<select id="selcategory"  class="form-select" onchange="setcategory(this)">
+			<option value="">Select a Category</option>
+			<option value="FIC">Fiction</option>
+			<option value="NFC">Non Fiction</option>
+			<option value="CMC">Comic</option>
+			<option value="MYS">Mystery</option>
+			<option value="ROM">Romance</option>
+		</select>
+	</div>
+	
+	<div class="col-6">
+	    <input type="hidden" id="txtauthor" class="form-control" name="author_id">
+		<input type="hidden" id="txtauthorname" class="form-control"  name="author">
+	    <label for="selauthor" class="form-label">Author</label>
+	    <select id="selauthor" class="form-select"  onchange="setauthor(this);">
+	    </select>   		
+    </div>
+	
+	<div class="col-12">
+		<label for="bookdesc" class="form-label">Description</label>
+		<input type="text" class="form-control" id="bookdesc" name="desc">
+    </div>
+	
+	</div>
+			
+</form>
+
+
+
+
+	
+</div>
+</div>

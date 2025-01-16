@@ -1,0 +1,29 @@
+<div id='x-main' class="container-full mt-5 px-2">
+<div class="row">
+	<div class="col-12 p-2">
+		<h3 class="float-start ps-2">All Books</h3>
+		
+		<div class="float-end ">
+			<select  type="text" id="fil_author" class="form-select mx-2" style="width:250px;" onchange="filter()" required>            
+				
+			</select>
+		</div>	
+		
+		<div class="float-end px-2">
+				<select type="text" id="fil_category"  name="category_id" class="form-select" onchange="filter()">
+					<option value="">All Categories</option>
+					<option value="FIC">Fiction</option>
+					<option value="NFC">Non Fiction</option>
+					<option value="CMC">Comic</option>
+					<option value="MYS">Mystery</option>
+					<option value="ROM">Romance</option>
+				</select>  
+		</div>
+	
+	</div>
+</div>	
+<div id='div_book_table'>
+
+</div>
+
+</div>	

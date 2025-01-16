@@ -1,0 +1,73 @@
+
+<div id='x-main' class="container-full mt-5 p-3">
+<div class="container-md">
+<div class="row">
+<div class="col-12 p-2">
+	<h3 class="float-start">Add Member</h3>
+	<button type="button" class="btn btn-outline-primary float-end mx-2" onclick="show_member_list();">Cancel</button>
+	<button type="button" class="btn btn-outline-primary float-end mx-2" onclick="save_member();">Save</button>	
+	</div>
+	</div>
+
+<form method="post" id="member_form">
+  <div class="row">
+    
+    <div class="col-4">
+      <label for="membername" class="form-label">Name</label>
+      <input type="hidden" class="form-control" id="memberid" name="_id"> 
+      <input type="text" class="form-control" id="membername" name="member_name" required>
+    </div>
+	
+       
+    <div class="col-4">
+      <label for="memberemail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="memberemail" name="member_email" required>
+    </div>
+    
+   
+    <div class="col-4">
+      <label for="memberphonenumber" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="memberphonenumber" name="phone_number" required>
+    </div>
+    
+    
+    <div class="col-4">
+      <label for="memberpassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="memberpassword" name="Password" required>
+    </div>
+  </div>
+  
+   <div>
+	  <button class="btn rounded-0">
+		<video id="video" style="display:none; width:175px; height:175px;"></video>
+		<img id="photo" style="width:175px; height:175px;" class="card-img-top img-fluid rounded-circle" alt="Profile Picture">
+	  </button>
+
+	  <div class="camera mt-2">
+		<button id="startcam" type="button" onclick="startCam()">Start Camera</button>
+		<button id="takepic" type="button" style="display:none;" onclick="takePic()">Take Photo</button>
+	  </div>
+	  <canvas id="canvas" style="display:none;"></canvas>
+
+	  <div class="col-3" style="display:block">
+		<label for="mem_pic">Photo</label>
+		<input type="text" class="form-control mt-2" id="mem_pic">
+	  </div>
+
+	</div>
+	<div>
+	  <div class="mt-2">
+		<button id="getLoc" type="button" onclick="getLocation()">Get Location</button>
+	  </div>
+	  <input type="text" class="form-control mt-2" id="loc_lat">
+	  <input type="text" class="form-control mt-2" id="loc_lon">
+
+	</div>
+
+</form>
+
+</div>
+</div>
+	
+
+
